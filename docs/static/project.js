@@ -65,7 +65,6 @@ psave.addEventListener('click',async (event)=>{
 
     const title = document.getElementById('project-title').value;
     const des = document.getElementById('project-des').value;
-    const imgFirst = document.getElementById('img-first').value;
     const projectImg = document.getElementById('project-img').files[0];
     if(!(title && des && imgFirst && projectImg)){
         alert("All fields must be filled!");
