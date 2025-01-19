@@ -89,7 +89,6 @@ psave.addEventListener('click',async (event)=>{
         await setDoc(doc(db, "projects",`project-${pcount+1}`),{
           title: title,
           description: des,
-          imgFirst: imgFirst
         }, {signal});
         console.log("Project submitted");
         setTimeout(()=>{
