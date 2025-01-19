@@ -66,7 +66,7 @@ psave.addEventListener('click',async (event)=>{
     const title = document.getElementById('project-title').value;
     const des = document.getElementById('project-des').value;
     const projectImg = document.getElementById('project-img').files[0];
-    if(!(title && des && imgFirst && projectImg)){
+    if(!(title && des && projectImg)){
         alert("All fields must be filled!");
         window.scrollTo({ top: 0, behavior: 'smooth' });
         return;
