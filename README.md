@@ -14,3 +14,9 @@ This website is to write data to the official website of Astronomy Club, IIT BHU
 <ol>
   <li>Config File</lli>
 </ol>
+
+<b>Additional Changes</b>
+<ol>
+  <li>Change hosting</li>
+  <li>Change apppwrite author</li>
+</ol>
