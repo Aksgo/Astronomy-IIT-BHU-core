@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Members to Astornomy Club</title>
+    <link rel="icon" href="./static/asset/website-favicon.png" type="image/png">
+    <link rel="stylesheet" href = "/static/form-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@14.0.1"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="team-form" class="form-syl">
+            <span>Add new member in the Core team</span>
+            <label for="mem-year"></label>
+            <input type="text" id="mem-year" class="blog-inp-syl" placeholder="team year" required>
+            <label for="mem-name"></label>
+            <input type="text" id="mem-name" class="blog-inp-syl" placeholder="name" required>
+            <label for="mem-dsgn"></label>
+            <input type="text" id="mem-dsgn" class="blog-inp-syl" placeholder="enter designation" required></textarea>
+            <label for="mem-img">Upload member image: </label>
+            <input type="file" id="mem-img" accept="image/*" required>
+            <div id="save-btn" class="event-btn">
+                <button type="submit" id="mem-save">Save</button>
+                <button type="cancel" id="mem-cancel">cancel</button>
+            </div>
+        </form>
+        
+    </div>
+</body>
+<script src="./static/team.js" type="module"></script>
+</html>

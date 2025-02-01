@@ -28,6 +28,7 @@ const header = document.getElementById('header-text');
 const addBlog = document.getElementById('add-blog');
 const addProject = document.getElementById('add-project');
 const addact = document.getElementById('add-activity');
+const addMem = document.getElementById('add-mem');
 const addach = document.getElementById('add-ach');
 //const testimg = document.getElementById('test-img');
 const homePath = "../index.html";
@@ -183,6 +184,9 @@ addact.addEventListener('click', (event)=>{
 });
 addach.addEventListener('click',(event)=>{
   redirectUser("../achievements.html");
+});
+addMem.addEventListener('click',(event)=>{
+  redirectUser("../team.html");
 });
 
 /*
