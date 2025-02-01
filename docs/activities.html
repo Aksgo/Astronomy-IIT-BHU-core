@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Club Activities</title>
+    <link rel="icon" href="./static/asset/website-favicon.png" type="image/png">
+    <link rel="stylesheet" href = "/static/form-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/appwrite@14.0.1"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="act-form" class="form-syl">
+            <span>Enter Astronomy Club's new Activity</span>
+            <label for="act-title"></label>
+            <input type="text" id="act-title" class="blog-inp-syl" placeholder="enter activity title" required>
+            <label for="act-des"></label>
+            <textarea type="text" id="act-des" class="blog-inp-syl" placeholder="enter activity description" required></textarea>
+            <label for="act-img">Add activity image: </label>
+            <input type="file" id="act-img" accept="image/*" required>
+
+            <div id="save-btn" class="event-btn">
+                <button type="submit" id="act-save">Save</button>
+                <button type="cancel" id="act-cancel">cancel</button>
+            </div>
+        </form>
+        
+    </div>
+</body>
+<script src="./static/activities.js" type="module"></script>
+</html>
