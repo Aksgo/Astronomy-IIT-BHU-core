@@ -27,6 +27,8 @@ const active_blog = document.getElementById('active-blog');
 const header = document.getElementById('header-text');
 const addBlog = document.getElementById('add-blog');
 const addProject = document.getElementById('add-project');
+const addact = document.getElementById('add-activity');
+//const testimg = document.getElementById('test-img');
 const homePath = "../index.html";
 
 setPersistence(auth, browserSessionPersistence)
@@ -175,6 +177,9 @@ addBlog.addEventListener('click',(event)=>{
 addProject.addEventListener('click', (event)=>{
   redirectUser("../project.html");
 })
+addact.addEventListener('click', (event)=>{
+  redirectUser("../activities.html");
+});
 
 /*
 EXTRA KNOWLEDGE : 
