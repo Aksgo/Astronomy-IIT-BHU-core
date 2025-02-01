@@ -1,20 +1,12 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
 import {getFirestore, collection , doc, setDoc, getDocs, getDoc} from "https://www.gstatic.com/firebasejs/11.1.0/firebase-firestore.js";
-import { GoogleAuthProvider , getAuth, signInWithPopup, signOut, setPersistence, browserSessionPersistence} from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
-
-const firebaseConfig = {
-  apiKey: "AIzaSyCT_txTnewyhH8VFFNO5jgHvxyerbIzhk4",
-  authDomain: "astro-website-48956.firebaseapp.com",
-  projectId: "astro-website-48956",
-  storageBucket: "astro-website-48956.firebasestorage.app",
-  messagingSenderId: "1026726115415",
-  appId: "1:1026726115415:web:320cb60bf7dfddc5950b12",
-  measurementId: "G-60CE35ZVV8"
-};
+import {getAuth,setPersistence, browserSessionPersistence} from "https://www.gstatic.com/firebasejs/11.1.0/firebase-auth.js";
+import { appwrite_pid,firebaseConfig} from "../static/config.js";
+//note that nextjs project is working with fierbase sdk not cdn
 
 const client = new window.Appwrite.Client()
     .setEndpoint('https://cloud.appwrite.io/v1')
-    .setProject('67777691001b45d492b8');
+    .setProject(appwrite_pid);
 
 const storage = new window.Appwrite.Storage(client);
 
