@@ -28,6 +28,7 @@ const header = document.getElementById('header-text');
 const addBlog = document.getElementById('add-blog');
 const addProject = document.getElementById('add-project');
 const addact = document.getElementById('add-activity');
+const addach = document.getElementById('add-ach');
 //const testimg = document.getElementById('test-img');
 const homePath = "../index.html";
 
@@ -147,7 +148,7 @@ function displayBlog(data, count){
 window.addEventListener('scroll',function(){
   if(!addingBlog){
     const sections = document.querySelectorAll('.blog-dp');
-    let curTitle = "Welcome to Astronomy Club Blogger";
+    let curTitle = "Astro Club Manager";
     sections.forEach(section => {
       const rect = section.getBoundingClientRect();
       if (rect.top <= 50 && rect.bottom >= 0) {
@@ -179,6 +180,9 @@ addProject.addEventListener('click', (event)=>{
 })
 addact.addEventListener('click', (event)=>{
   redirectUser("../activities.html");
+});
+addach.addEventListener('click',(event)=>{
+  redirectUser("../achievements.html");
 });
 
 /*
