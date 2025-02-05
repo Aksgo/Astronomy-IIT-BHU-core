@@ -8,7 +8,7 @@ This website is to write data to the official website of Astronomy Club, IIT BHU
   <li>Project Manager</li>
   <li>Teams</li>
   <li>Activities</li>
-  <li>Achievements (In Progress)</li>
+  <li>Achievements</li>
   <li>(to add option to update and delete)</li>
 </ol>
 
